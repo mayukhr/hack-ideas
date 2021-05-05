@@ -1,38 +1,140 @@
+:root {
+  --radius: 0.5rem;
+  --clr-graydark: #6C4E21;
+  --clr-graymed: gray;
+  --clr-primary: #F58024;
+  --clr-primarydark: #6C4E21;
+  --clr-primarylight: #FAF3ED;
+  --clr-primaryborder: #E9BF8E;
+  --padding: 1rem;
+}
+body{
+  background-color: #F5E3D6;
+}
 .App {
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-graydark);
+  /* background-color: #F5E3D6; */
+}
+
+.logo {
+  height: 12rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.logo-mini {
+  height: 5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.wrapper {
+  background: white;
+  width: 20rem;
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: 2rem auto;
+}
+
+.hack-card-wrapper {
+  background: white;
+  /* width: 90%; */
+  padding: 2rem;
+  border-radius: var(--radius);
+  /* border-color: black; */
+  border: 2px solid var(--clr-primaryborder);
+  margin: 2rem auto;
+}
+
+.wrapperLong {
+  background: white;
+  width: 85%;
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: 2rem auto;
+}
+
+.title {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.description {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 1rem 0;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.form-input {
+  border: none;
+  background-color: var(--clr-primarylight);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transition: 250ms all ease-in;
+}
+
+.form-input::placeholder {
+  color: var(--clr-graymed);
+}
+
+.form-input:hover {
+  border: 1px solid var(--clr-primary);
+  box-shadow: 0 0 5px var(--clr-primary);
+  background: white;
+}
+
+.form-input:focus {
+  border: 1px solid var(--clr-primary);
+  box-shadow: 0 0 5px var(--clr-primary);
+  background: white;
+}
+
+.btn-primary {
+  border: none;
+  background: var(--clr-primary);
+  width: 20rem;
   color: white;
+  margin-top: 1rem;
+  padding: var(--padding);
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-weight: bold;
+  transition: 250ms all ease-in;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary:hover {
+  background: var(--clr-primarydark);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-message {
+  color: red;
+}
+
+.hack-card-createdBy {
+  font-style: normal;
+  font-weight: bold;
+  /* font-size: 24px;*/
+  padding: 1rem 0 0 0;
+  color: #A19595;
 }
