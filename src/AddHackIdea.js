@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 const AddHackIdea = ({user, posts, setIsEnabledAddHackForm}) => {
   const [idea, setIdea] = useState('');
-  const [tags, setTags] = useState();
+  const [tags, setTags] = useState('');
  
   const addHackIdea = () => {
     const tagsList = tags.split(',');
     const newPost = {
       "idea": idea,
-      "votes": 0,
+      "votes": [],
       "tags": tagsList,
       "createdAt": Date.now(),
       "createdBy": user,
@@ -35,7 +35,7 @@ const AddHackIdea = ({user, posts, setIsEnabledAddHackForm}) => {
         className='form-input-field form-input-tags'
         type='text'
         id='username'
-        placeholder='Enter comma separated tags. Ex: React,Javascript'
+        placeholder='Enter comma separated tags. Ex: React,JS'
         onChange={({ target }) => setTags(target.value)}
         value={tags}
       />

@@ -5,10 +5,12 @@
   --clr-primarydark: #6C4E21;
   --clr-primarylight: #FAF3ED;
   --clr-primaryborder: #E9BF8E;
+  --clr-background: #F5E3D6;
+  --clr-votes: #C4C4C4;
   --padding: 1rem;
 }
 body{
-  background-color: #F5E3D6;
+  background-color: var(--clr-background);
 }
 
 .App {
@@ -47,10 +49,13 @@ body{
 
 .hack-card-wrapper {
   background: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: var(--radius);
   border: 2px solid var(--clr-primaryborder);
   margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 0.5rem;
 }
 .hack-card-tag {
   background: white;
@@ -180,4 +185,20 @@ body{
 .input-label {
   font-size: 1.2rem;
   padding: 1rem 0 1rem 0;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1.5rem solid var(--clr-votes);
+  cursor: pointer;
+}
+
+.vote-count {
+  color: var(--clr-votes);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: .5rem;
 }
