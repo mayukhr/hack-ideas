@@ -24,8 +24,8 @@ const VotesSection = ({votes, user}) => {
 
     return (
         <>
-            <div class={`arrow-up ${isVotedArrowClass}`} onClick={addVote}></div>
-            <div class={`vote-count ${isVotedCountClass}`}>{voteCount}</div>
+            <div className={`arrow-up ${isVotedArrowClass}`} onClick={addVote}></div>
+            <div className={`vote-count ${isVotedCountClass}`}>{voteCount}</div>
         </>
     );
 }

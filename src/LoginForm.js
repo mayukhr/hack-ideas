@@ -17,7 +17,7 @@ const LoginForm = (props) => {
                 <p className="description">Please use your Employee Id</p>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label for="username" className="form-label">
+                        <label className="form-label">
                             Employee Id
                         </label>
                         <input
