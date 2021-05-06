@@ -196,9 +196,17 @@ body{
   cursor: pointer;
 }
 
+.arrow-up-voted {
+  border-bottom: 1.5rem solid var(--clr-primary);
+}
+
 .vote-count {
   color: var(--clr-votes);
   font-weight: bold;
   font-size: 1.5rem;
   padding-left: .5rem;
+}
+
+.vote-count-voted {
+  color: var(--clr-primary);
 }

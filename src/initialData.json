@@ -16,7 +16,7 @@
         },
         {
             "idea": "Idea #3: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "votes": ["EMP001", "EMP002", "EMP003", "EMP004", "EMP005", "EMP006"],
+            "votes": ["EMP001", "EMP002", "EMP003", "EMP004", "EMP005", "EMP006", "mayukh"],
             "tags": ["React", "Euro", "BioGas"],
             "createdAt": 1620329498699,
             "createdBy": "EMP003"

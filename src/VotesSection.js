@@ -1,18 +1,31 @@
 import React, {useState} from "react";
 
 const VotesSection = ({votes, user}) => {
+    const votedArrowClass = 'arrow-up-voted';
+    const votedCountClass = 'vote-count-voted';
     const [voteCount, setVoteCount] = useState(votes.length);
+    const isVotedAlready = votes.includes(user);
+    const [isVotedArrowClass, setIsVotedArrowClass] = useState(isVotedAlready ? votedArrowClass : '');
+    const [isVotedCountClass, setIsVotedCountClass] = useState(isVotedAlready ? votedCountClass : '');
+    
+
     const addVote = () => {
         if(!votes.includes(user)) {
             votes.push(user);
-            setVoteCount(votes.length);
+            setIsVotedArrowClass(votedArrowClass);
+            setIsVotedCountClass(votedCountClass);
+        } else {
+            votes.pop(user);
+            setIsVotedArrowClass('');
+            setIsVotedCountClass('');
         }
+        setVoteCount(votes.length);
     }
-    
+
     return (
         <>
-            <div class='arrow-up' onClick={addVote}></div>
-            <div class='vote-count'>{voteCount}</div>
+            <div class={`arrow-up ${isVotedArrowClass}`} onClick={addVote}></div>
+            <div class={`vote-count ${isVotedCountClass}`}>{voteCount}</div>
         </>
     );
 }
