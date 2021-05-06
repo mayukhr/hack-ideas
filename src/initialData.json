@@ -3,21 +3,21 @@
         {
             "idea": "Idea #1: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             "votes": 15,
-            "tags": ["#React", "#Environment", "#BioGas"],
+            "tags": ["React", "Rupee", "BioGas"],
             "createdAt": "21/01/2021",
             "createdBy": "EMP002"
         },
         {
             "idea": "Idea #2: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             "votes": 15,
-            "tags": ["#Font", "#UI", "#Research"],
+            "tags": ["Font", "UI", "Research"],
             "createdAt": "21/01/2021",
             "createdBy": "EMP001"
         },
         {
             "idea": "Idea #3: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             "votes": 15,
-            "tags": ["#React", "#Environment", "#BioGas"],
+            "tags": ["React", "Euro", "BioGas"],
             "createdAt": "21/01/2021",
             "createdBy": "EMP003"
         }

@@ -7,6 +7,10 @@ const HomePage = (props) => {
         <div className="App">
             <div className="wrapperLong">
                 <img src="logo.svg" className="logo-mini" alt="logo" />
+                <div className="container-top">
+                    <span className="user-display">{`Hello, ${props.user}`}</span>
+                    <button className="btn-primary right-float" type="button"> Add a Hack Idea </button>
+                </div>
                 {/* {data.posts[0].idea} */}
                 {data.posts.map( post => {
                     return <HackCard post={post} />

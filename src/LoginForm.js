@@ -4,7 +4,6 @@ const LoginForm = (props) => {
     const [employeeId, setEmployeeId] = useState("");
     
     const handleSubmit = e => {
-        // e.preventDefault();
         props.setUser(employeeId);
         localStorage.setItem('user', employeeId);
         console.log(employeeId);

@@ -11,10 +11,17 @@
 body{
   background-color: #F5E3D6;
 }
+
 .App {
   font-family: "Montserrat", sans-serif;
-  color: var(--clr-graydark);
-  /* background-color: #F5E3D6; */
+  color: var(--clr-primarydark);
+}
+
+.user-display {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--clr-primarydark);
 }
 
 .logo {
@@ -47,6 +54,16 @@ body{
   /* border-color: black; */
   border: 2px solid var(--clr-primaryborder);
   margin: 2rem auto;
+}
+.hack-card-tag {
+  background: white;
+  padding: 0.2rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--clr-primary);
+  margin: 2rem auto;
+  color: var(--clr-primary);
+  font-weight: bold;
+  margin-right: 1rem;
 }
 
 .wrapperLong {
@@ -134,7 +151,14 @@ body{
 .hack-card-createdBy {
   font-style: normal;
   font-weight: bold;
-  /* font-size: 24px;*/
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 1rem 0;
   color: #A19595;
+}
+
+.right-float {
+  float: right;
+  margin-top: 0;
+}
+.container-top {
+  padding: 0 0 2rem 0;
 }
