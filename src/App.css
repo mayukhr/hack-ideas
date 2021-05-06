@@ -1,6 +1,5 @@
 :root {
   --radius: 0.5rem;
-  --clr-graydark: #6C4E21;
   --clr-graymed: gray;
   --clr-primary: #F58024;
   --clr-primarydark: #6C4E21;
@@ -48,10 +47,8 @@ body{
 
 .hack-card-wrapper {
   background: white;
-  /* width: 90%; */
   padding: 2rem;
   border-radius: var(--radius);
-  /* border-color: black; */
   border: 2px solid var(--clr-primaryborder);
   margin: 2rem auto;
 }
@@ -144,10 +141,6 @@ body{
   background: var(--clr-primarydark);
 }
 
-.error-message {
-  color: red;
-}
-
 .hack-card-createdBy {
   font-style: normal;
   font-weight: bold;
@@ -161,4 +154,30 @@ body{
 }
 .container-top {
   padding: 0 0 2rem 0;
+}
+
+.form-input-field {
+  width: 100%;
+  border: 2px solid var(--clr-primaryborder);
+  border-radius: var(--radius);
+  color: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.form-input-tags {
+  height: 2.5rem;
+}
+
+.add-hack-idea-area {
+  height: 20rem;
+}
+
+.form-input-tags,.add-hack-idea-area:focus {
+  outline: none;
+}
+
+.input-label {
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem 0;
 }

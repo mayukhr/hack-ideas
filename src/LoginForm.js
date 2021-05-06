@@ -21,12 +21,12 @@ const LoginForm = (props) => {
                             Employee Id
                         </label>
                         <input
-                        className="form-input"
-                        type="text"
-                        id="username"
-                        placeholder="Enter your Employee Id"
-                        onChange={({ target }) => setEmployeeId(target.value)}
-                        value={employeeId}
+                            className="form-input"
+                            type="text"
+                            id="username"
+                            placeholder="Enter your Employee Id"
+                            onChange={({ target }) => setEmployeeId(target.value)}
+                            value={employeeId}
                         />
                     </div>
                     <button className="btn-primary" type="submit"> 

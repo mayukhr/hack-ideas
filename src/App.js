@@ -10,9 +10,7 @@ const App = () => {
     setUser(localStorage.getItem('user'));
   }, []);
 
-  // const returnForm = user ? <div>{user} is loggged in</div> : <LoginForm setUser={setUser} />;
   const returnForm = user ? <HomePage user={user} /> : <LoginForm setUser={setUser} />;
-
 
   return (
     <div>{returnForm}</div>
