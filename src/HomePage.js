@@ -8,6 +8,7 @@ const HomePage = ({user}) => {
     const openAddHackIdea = () => {
         setIsEnabledAddHackForm(true);
     }
+    const posts = data.posts;
     
     return (
         <div className="App">
@@ -21,12 +22,12 @@ const HomePage = ({user}) => {
                             <button className="btn-primary right-float" type="button" onClick={openAddHackIdea}> Add a Hack Idea </button>
                         </div>
                 
-                        {data.posts.map( post => {
+                        {posts.map( post => {
                             return <HackCard post={post} />
                         })}
                     </>
                 ):
-                <AddHackIdea user={user} />
+                <AddHackIdea user={user} posts={posts} setIsEnabledAddHackForm={setIsEnabledAddHackForm}/>
             }
             </div>
         </div>

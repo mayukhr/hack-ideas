@@ -6,7 +6,7 @@ const HackCard = (props) => {
         <div className="hack-card-wrapper">
             {idea}
             <div className="hack-card-createdBy">
-                {`${createdBy} created this on: ${createdAt}`}
+                {`${createdBy} created this on: ${new Date(createdAt).toLocaleString()}`}
             </div>
             {tags.map(tag => {
                 return <span className="hack-card-tag">{`#${tag}`}</span>
