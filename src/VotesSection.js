@@ -1,10 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 
-const VotesSection = ({votes}) => {
+const VotesSection = ({votes, user}) => {
+    const [voteCount, setVoteCount] = useState(votes.length);
+    const addVote = () => {
+        if(!votes.includes(user)) {
+            votes.push(user);
+            setVoteCount(votes.length);
+        }
+    }
+    
     return (
         <>
-            <div class='arrow-up'></div>
-            <div class='vote-count'>{votes.length}</div>
+            <div class='arrow-up' onClick={addVote}></div>
+            <div class='vote-count'>{voteCount}</div>
         </>
     );
 }

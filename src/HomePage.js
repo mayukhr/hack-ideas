@@ -23,7 +23,7 @@ const HomePage = ({user}) => {
                         </div>
                 
                         {posts.map( post => {
-                            return <HackCard post={post} />
+                            return <HackCard post={post} user={user} />
                         })}
                     </>
                 ):
