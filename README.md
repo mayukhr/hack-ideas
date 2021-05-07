@@ -8,7 +8,7 @@ Link: https://www.figma.com/file/dYabTCqjE8AWo4g2xGHnCr/HackIdeas_Scripbox?node-
 ![](demo-mobile.gif)
 
 ## DEMO Desktop View .gif
-![](demo-mobile.gif)
+![](demo-desktop-new.gif)
 
 ## Features: 
 1. Login: Login is tracked using localStorage. To logout, for now, we have to clear localStorage of browser
